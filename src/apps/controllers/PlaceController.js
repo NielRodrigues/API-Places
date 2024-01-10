@@ -25,7 +25,7 @@ class PlaceController {
     if (state) {
       where = {
         ...where,
-        state: { [Op.substring]: state }
+        state: { [Op.iLike]: state }
       };
     }
 
